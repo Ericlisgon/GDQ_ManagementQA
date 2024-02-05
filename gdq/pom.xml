@@ -1,0 +1,89 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>mrt</groupId>
+	<artifactId>mrt</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>mrt_project</name>
+
+
+	<properties>
+		<flatlafVersion>3.2</flatlafVersion>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>AsposeJavaAPI</id>
+			<name>Aspose Java API</name>
+			<url>https://repository.aspose.com/repo/</url>
+		</repository>
+
+		<repository>
+			<id>GroupDocsJavaAPI</id>
+			<name>GroupDocs Java API</name>
+			<url>http://repository.groupdocs.com/repo/</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.aspose</groupId>
+			<artifactId>aspose-cells</artifactId>
+			<version>21.8</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.formdev</groupId>
+			<artifactId>flatlaf-intellij-themes</artifactId>
+			<version>3.2.3</version>
+		</dependency>
+		
+		<dependency>
+            <groupId>com.formdev</groupId>
+            <artifactId>flatlaf</artifactId>
+            <version>${flatlafVersion}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.formdev</groupId>
+            <artifactId>flatlaf</artifactId>
+            <version>${flatlafVersion}</version>
+            <classifier>linux-x86_64</classifier>
+            <type>so</type>
+        </dependency>
+        <dependency>
+            <groupId>com.formdev</groupId>
+            <artifactId>flatlaf</artifactId>
+            <version>${flatlafVersion}</version>
+            <classifier>windows-x86_64</classifier>
+            <type>dll</type>
+        </dependency>
+        <dependency>
+            <groupId>com.formdev</groupId>
+            <artifactId>flatlaf</artifactId>
+            <version>${flatlafVersion}</version>
+            <classifier>windows-arm64</classifier>
+            <type>dll</type>
+        </dependency>
+
+
+		<!-- <dependency>
+			<groupId>com.aspose</groupId>
+		<artifactId>aspose-cells</artifactId>
+			<version>20.6</version>
+		</dependency> -->
+		<dependency>
+			<groupId>com.groupdocs</groupId>
+			<artifactId>groupdocs-editor</artifactId>
+			<version>20.11</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.2.3</version>
+		</dependency>
+
+	</dependencies>
+</project>
